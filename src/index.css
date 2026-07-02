@@ -1,0 +1,64 @@
+:root {
+  --page: #ebe8e3;
+  --text: #312f2d;
+  --heading: #1f1e1c;
+  --muted: #746e68;
+  --border: #d7cdc3;
+  --wash: #f5efe8;
+  --teal: #6f6861;
+  --accent: #cfad8f;
+  --taupe: #8b827a;
+  --taupe-dark: #5f5a55;
+  --lime: #d8f420;
+  --panel: #fffdf9;
+  --shadow: 0 18px 44px rgba(66, 58, 50, 0.13);
+  --font-display: "Times New Roman", Georgia, serif;
+  --font-sans:
+    Montserrat, Avenir, "Segoe UI", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+
+  color: var(--text);
+  background: var(--page);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--page);
+}
+
+body {
+  min-width: 320px;
+  min-height: 100svh;
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  touch-action: manipulation;
+}
+
+img {
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100svh;
+}
