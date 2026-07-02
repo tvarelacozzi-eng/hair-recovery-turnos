@@ -42,6 +42,7 @@ import {
   type Treatment,
   type Weekday,
 } from './scheduling'
+import AnimatedHero from './components/AnimatedHero'
 import hairRecoveryLogo from './assets/hair-recovery-logo.svg'
 import './App.css'
 
@@ -84,7 +85,7 @@ const treatmentShowcase = [
   },
   {
     category: 'Diagnóstico',
-    title: 'H[ai]R Analysis',
+    title: 'Hair Analysis',
     description:
       'Evaluación inicial con foco médico para definir el plan adecuado antes de reservar.',
     items: ['Análisis capilar', 'Plan personalizado', 'Seguimiento'],
@@ -845,23 +846,7 @@ function App() {
           <section className="booking-panel wizard-panel" aria-labelledby="booking-title">
             {bookingStep === 0 ? (
               <div className="booking-intro">
-                <div className="intro-hero">
-                  <span>Hair Recovery</span>
-                  <h1 id="booking-title">
-                    Un camino de excelencia y dedicación exclusiva en{' '}
-                    <em>medicina capilar</em>
-                  </h1>
-                  <p>
-                    Más de 30 años desarrollando tratamientos, diagnósticos y
-                    acompañamiento profesional para la recuperación y el cuidado
-                    del cabello.
-                  </p>
-                </div>
-
-                <button className="primary-action intro-action" type="button" onClick={startBooking}>
-                  Agendar turno
-                  <ChevronRight size={19} />
-                </button>
+                <AnimatedHero onStartBooking={startBooking} />
 
                 <section
                   className="landing-section treatments-showcase"
